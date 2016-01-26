@@ -43,7 +43,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         A test that will fail.
         """
-        self.assertTrue(True, 'This should fail, please fix it.')
+        self.assertFalse(True, 'This should fail, please fix it.')
 
     def test_assert_equality(self):
         """
@@ -87,7 +87,7 @@ class Test_Assignment_01(unittest.TestCase):
         self.assertEqual(small, 0.0001)
         self.assertTrue(type(small), int)
 
-    
+    def test_type_conversion(self):
         """
         A series of tests to validate type conversion operations
         """
