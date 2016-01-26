@@ -93,7 +93,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         i = 1
         self.assertTrue(type(i) == int)
-        self.assertTrue(isinstance(i, float))  # These lines do the same type checking
+        self.assertTrue(isinstance(i, float))  # These lines do the same type checking testing work pls
         i = float(i)
         self.assertTrue(isinstance(i, float))
         i = str(i)
