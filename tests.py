@@ -72,7 +72,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         A test to explore notation of big integers.
         """
-        x = 42,000
+        x = 42000
         self.assertTrue(isinstance(x, int))
 
     def test_bigger_integers(self):
@@ -80,11 +80,11 @@ class Test_Assignment_01(unittest.TestCase):
         A test for bigger, or smaller integers
         """
         big = 1e6
-        self.assertEqual(big, 100)
+        self.assertEqual(big, 1000000)
         self.assertTrue(type(big), int)
 
         small = 1e-5
-        self.assertEqual(small, 0.0001)
+        self.assertEqual(small, 0.000001)
         self.assertTrue(type(small), int)
 
     def test_type_conversion(self):
@@ -114,7 +114,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         j = 3.9999
         self.assertTrue(int(j), float)
-        self.assertEqual(int(j), 4)
+        self.assertEqual(int(j), 3)
 
     def tearDown(self):
         """
